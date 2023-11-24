@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "br.edu.utfpr.usandopreferences_pm25s_2023_2"
-        minSdk = 24
+        minSdk = 22
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
