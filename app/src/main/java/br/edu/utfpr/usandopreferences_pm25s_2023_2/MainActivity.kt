@@ -1,6 +1,7 @@
 package br.edu.utfpr.usandopreferences_pm25s_2023_2
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -58,5 +59,10 @@ class MainActivity : AppCompatActivity() {
         var editor = sharedPreference.edit()
         editor.putBoolean( "ligado", ligado )
         editor.commit()
+    }
+
+    fun btPreferenceOnClick(view: View) {
+        val intent = Intent( this, SettingsActivity::class.java)
+        startActivity( intent )
     }
 }
